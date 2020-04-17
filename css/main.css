@@ -233,11 +233,24 @@ body {
 .nav-right-user-icons i:hover {
   color: rgba(0,0,0, 0.9);
 }
-
+/* MAIN */
 #main-right {
+  display: flex;
   background-image: url("../img/mine.jpg");
   width: 100%;
   height: 100%;
+}
+
+.main-received {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.main-sent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 /* FOOTER RIGHT */
@@ -307,4 +320,22 @@ body {
 /* TEMPLATE */
 .template {
   display: none;
+}
+
+.sent {
+  align-items: flex-end;
+  width: 130px;
+  height: 50px;
+  background: #D5FABA;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.received {
+  align-items: flex-start;
+  width: 130px;
+  height: 50px;
+  background: #FFF;
+  border-radius: 5px;
+  margin: 10px;
 }
