@@ -315,14 +315,14 @@ body {
 }
 
 .contact {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-left: 10px;
-  }
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 10px;
 }
 
 /* TEMPLATE */
+
 .template {
   display: none;
 }
