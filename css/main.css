@@ -28,7 +28,7 @@ body {
 /* LEFT DIV */
 .left {
   width: 35%;
-  background: rgb(230,230,230);
+  background: #FFF;
 }
 
 #nav-left-top {
@@ -102,13 +102,45 @@ body {
 }
 
 .a-active-notifications {
+  text-decoration: underline;
   font-size: 0.75rem;
+  color: #6292A9;
 }
 
 .nav-left-bottom-text {
   display: flex;
   flex-direction: column;
   margin-left: 10px;
+}
+
+/* SEARCH BOX CONTACTS */
+#searchbox-left {
+  display: flex;
+  height: 50px;
+  justify-content: flex-start;
+  align-items: center;
+  background: #FFF;
+}
+
+#searchbox-left input {
+  width: 70%;
+  height: 30px;
+  padding: 10px 20px;
+  line-height: 30px;
+  border: 0;
+  background: #FFF;
+  color: #cfd1d1;
+  font-size: 0.7rem;
+}
+
+#searchbox-left i {
+  margin: 0 25px 0 35px;
+  color: #cfd1d1;
+  cursor: pointer;
+}
+
+#searchbox-left i:hover {
+  color: rgba(0,0,0, 0.9);
 }
 
 /* RIGHT DIV */
