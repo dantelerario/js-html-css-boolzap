@@ -31,12 +31,12 @@ body {
   background: rgb(230,230,230);
 }
 
-#nav-left {
+#nav-left-top {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 70px;
-  min-height: 70px;
+  height: 65px;
+  min-height: 65px;
   background: #EAEAEA;
   border-right: 0.2px solid #B1B1B1;
 }
@@ -61,7 +61,7 @@ body {
   height: 100%;
   margin-right: 10px;
   color: #B1B1B1;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .nav-left-user-icons i {
@@ -71,6 +71,44 @@ body {
 
 .nav-left-user-icons i:hover {
   color: rgba(0,0,0, 0.9);
+}
+
+#nav-left-bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
+  min-height: 80px;
+  background: #8EDAFD;
+  border-right: 0.2px solid #B1B1B1;
+}
+
+.bell-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  margin-left: 20px;
+  background: #fff;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  color: #8EDAFD;
+}
+
+.span-notifications {
+  color: #304853;
+  font-weight: 700;
+}
+
+.a-active-notifications {
+  font-size: 0.75rem;
+}
+
+.nav-left-bottom-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
 }
 
 /* RIGHT DIV */
@@ -84,8 +122,8 @@ body {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 70px;
-  min-height: 70px;
+  height: 65px;
+  min-height: 65px;
   background: #EAEAEA;
 }
 
@@ -128,7 +166,7 @@ body {
   height: 100%;
   margin-right: 10px;
   color: #B1B1B1;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .nav-right-user-icons i {
@@ -149,8 +187,8 @@ body {
 /* FOOTER RIGHT */
 #footer-right {
   width: 100%;
-  height: 70px;
-  min-height: 70px;
+  height: 65px;
+  min-height: 65px;
   background: #F3EEEB;
 }
 
@@ -166,7 +204,7 @@ body {
   padding: 8px;
   margin: 20px;
   color: #6C7376;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .input-div i:hover {
