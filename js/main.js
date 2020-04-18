@@ -11,18 +11,13 @@ $(document).ready( function() {
       var inputList = keyInput.val().trim();
 
         if (inputList.length > 0) {
-          var newInputList = $('.template li').clone();
+          var newInputList = $('.template .sent').clone();
           newInputList.prepend(inputList);
           list.append(newInputList);
           keyInput.val('');
         }
     }
   });
-
-  // REMOVE AND UNDERLINE
-  $('body').on('click', '.todo li i', function() {
-    $(this).parent().remove();
-  })
 
 
 
