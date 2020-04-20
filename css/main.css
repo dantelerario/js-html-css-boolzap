@@ -27,6 +27,8 @@ body {
 
 /* LEFT DIV */
 .left {
+  display: flex;
+  flex-direction: column;
   width: 35%;
   background: #FFF;
 }
@@ -141,6 +143,13 @@ body {
 
 #searchbox-left i:hover {
   color: rgba(0,0,0, 0.9);
+}
+
+/* LIST OF CONTACTS */
+
+#list-of-contacts {
+  flex-grow: 1;
+  overflow-y: auto;
 }
 
 .contact-list {
