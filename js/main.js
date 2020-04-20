@@ -13,9 +13,31 @@ $(document).ready( function() {
 
         if (inputList.length > 0) {
           var newInputList = $('.template .sent').clone();
-          newInputList.prepend(inputList);
+          newInputList.children('.message').text(inputList);
           list.append(newInputList);
           keyInput.val('');
+
+          var time = new Date();
+          var hour = addZero( time.getHours() );
+          var minutes = addZero( time.getMinutes() );
+          var timeToSend = hour + ':' + minutes;
+          newInputList.children('.message-timer').text(timeToSend);
+
+          var timerMessage = setInterval(function() {
+
+            var received = $('.template .received').clone();
+            received.children('.message');
+            list.append(received);
+
+            var time = new Date();
+            var hour = addZero( time.getHours() );
+            var minutes = addZero( time.getMinutes() );
+            var timeToSend = hour + ':' + minutes;
+            received.children('.message-timer').text(timeToSend);
+
+            clearInterval(timerMessage)
+
+          }, 1000);
         }
     }
   });
@@ -37,3 +59,14 @@ $(document).ready( function() {
   // });
 
 }); /* END DOCUMENT */
+
+
+//////////////////FUNCTIONS
+
+function addZero(number) {
+    if(number < 10) {
+        number = '0' + number;
+    }
+
+    return number;
+}
