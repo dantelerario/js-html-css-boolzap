@@ -47,7 +47,7 @@ $(document).ready( function() {
 
     searchList.on("keyup", function() {
       var name = $(this).val().toLowerCase().trim();
-      $('.contact .span-name').filter(function() {
+      $('.contact-list').filter(function() {
       $(this).toggle($(this).text().toLowerCase().indexOf(name) > -1)
       });
     });
