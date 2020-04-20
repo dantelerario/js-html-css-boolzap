@@ -42,6 +42,16 @@ $(document).ready( function() {
     }
   });
 
+  //SEARCH CONTACT list
+    var searchList = $('.search-input');
+
+    searchList.on("keyup", function() {
+      var name = $(this).val().toLowerCase().trim();
+      $('.contact .span-name').filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(name) > -1)
+      });
+    });
+
 
   // CAMBIO ICONA FOOTER INPUT
   var sendIcon = $('#footer-right .input-div .icon');
