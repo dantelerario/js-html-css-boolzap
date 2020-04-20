@@ -29,17 +29,11 @@ $(document).ready( function() {
   });
 
   //FOCUS CAMBIO BG MENU Contacts
-
-  $('.contact-list').children().focus(function() {
-    $(this).parent().css("background-color", "orange");
-  }).blur(function() {
-    $(this).parent().css("background-color", "yellow");
-  });
-
-  // $(".mydiv").children().focus(function() {
-  //     $(this).parent().css("background-color", "orange");
+  // NEED FIXING
+  // $('.contact-list').children().focus(function() {
+  //   $(this).parent().css("background-color", "orange");
   // }).blur(function() {
-  //     $(this).parent().css("background-color", "yellow");
+  //   $(this).parent().css("background-color", "yellow");
   // });
 
 }); /* END DOCUMENT */
