@@ -1,7 +1,8 @@
 
 $(document).ready( function() {
 
-  var list = $('.main-sent');
+  //CHAT
+  var list = $('#main-right');
   var keyInput = $('.send-text');
 
   keyInput.keyup(function(e) {
@@ -20,5 +21,25 @@ $(document).ready( function() {
   });
 
 
+  // CAMBIO ICONA FOOTER INPUT
+  var sendIcon = $('#footer-right .input-div .icon');
+
+  keyInput.on('focus blur', function() {
+      sendIcon.toggleClass('fa-microphone fa-paper-plane');
+  });
+
+  //FOCUS CAMBIO BG MENU Contacts
+
+  $('.contact-list').children().focus(function() {
+    $(this).parent().css("background-color", "orange");
+  }).blur(function() {
+    $(this).parent().css("background-color", "yellow");
+  });
+
+  // $(".mydiv").children().focus(function() {
+  //     $(this).parent().css("background-color", "orange");
+  // }).blur(function() {
+  //     $(this).parent().css("background-color", "yellow");
+  // });
 
 }); /* END DOCUMENT */

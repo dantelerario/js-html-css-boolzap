@@ -159,6 +159,7 @@ body {
   height: 75px;
   max-height: 75px;
   border-bottom: 1px solid #EAEAEA;
+  background: #fff;
   cursor: pointer;
 }
 
@@ -245,24 +246,51 @@ body {
 }
 /* MAIN */
 #main-right {
-  display: flex;
   background-image: url("../img/mine.jpg");
   width: 100%;
   height: 100%;
+  overflow-y: auto;
 }
 
-.main-received {
-  display: flex;
-  width: 50%;
-  flex-direction: column;
-  align-items: flex-start;
+.sent {
+  position: relative;
+  float: right;
+  width: 120px;
+  height: 50px;
+  background: #D5FABA;
+  border-radius: 5px;
+  margin: 10px 50px 10px 0;
+  color: #000;
+  clear: both;
 }
 
-.main-sent {
-  display: flex;
-  width: 50%;
-  flex-direction: column;
-  align-items: flex-end;
+.received {
+  position: relative;
+  float: left;
+  width: 120px;
+  height: 50px;
+  background: #FFF;
+  border-radius: 5px;
+  margin: 10px 0 10px 50px;
+  color: #000;
+  clear: both;
+}
+
+.message {
+  text-align: left;
+  margin: 10px 0 0 15px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.message-timer {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  margin-right: 5px;
+  font-size: 0.5rem;
+  font-weight: 700;
+  color: rgba(0,0,0, 0.5)
 }
 
 /* FOOTER RIGHT */
@@ -328,51 +356,12 @@ body {
   margin-left: 10px;
 }
 
+.focus-bg {
+  background: #EAEBEB;
+}
+
 /* TEMPLATE */
 
 .template {
   display: none;
-}
-
-.sent {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-self: flex-end;
-  width: 120px;
-  height: 50px;
-  background: #D5FABA;
-  border-radius: 5px;
-  margin: 30px auto;
-  color: #000;
-}
-
-.received {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-self: flex-start;
-  width: 120px;
-  height: 50px;
-  background: #FFF;
-  border-radius: 5px;
-  margin: 30px auto;
-  color: #000;
-}
-
-.message {
-  margin-left: 10px;
-  font-size: 0.8rem;
-  font-weight: 700;
-  align-self: flex-start;
-}
-
-.message-timer {
-  margin-right: 5px;
-  font-size: 0.5rem;
-  font-weight: 700;
-  align-self: flex-end;
-  color: rgba(0,0,0, 0.5)
 }
