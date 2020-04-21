@@ -2,10 +2,12 @@
 $(document).ready( function() {
 
   //CHAT
+
   var list = $('#main-right');
   var keyInput = $('.send-text');
 
   keyInput.keyup(function(e) {
+
     console.log(e.which, e.keyCode);
 
     if (e.which == 13 || e.keyCode == 13) {
@@ -23,7 +25,7 @@ $(document).ready( function() {
           var timeToSend = hour + ':' + minutes;
           newInputList.children('.message-timer').text(timeToSend);
 
-          var timerMessage = setInterval(function() {
+          var timerMessage = setTimeout(function() {
 
             var received = $('.template .received').clone();
             received.children('.message');
@@ -35,14 +37,13 @@ $(document).ready( function() {
             var timeToSend = hour + ':' + minutes;
             received.children('.message-timer').text(timeToSend);
 
-            clearInterval(timerMessage)
-
           }, 1000);
         }
     }
   });
 
   //SEARCH CONTACT list
+
     var searchList = $('.search-input');
 
     searchList.on("keyup", function() {
@@ -54,6 +55,7 @@ $(document).ready( function() {
 
 
   // CAMBIO ICONA FOOTER INPUT
+
   var sendIcon = $('#footer-right .input-div .icon');
 
   keyInput.on('focus blur', function() {
@@ -71,12 +73,12 @@ $(document).ready( function() {
 }); /* END DOCUMENT */
 
 
-//////////////////FUNCTIONS
+//  FUNCTIONS
 
-function addZero(number) {
-    if(number < 10) {
-        number = '0' + number;
+    function addZero(number) {
+        if(number < 10) {
+            number = '0' + number;
+        }
+
+        return number;
     }
-
-    return number;
-}
