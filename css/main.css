@@ -342,6 +342,10 @@ body {
 
 /* UTILITIES */
 
+.hidden {
+  display: none;
+}
+
 .contact-list-timer {
   display: flex;
   height: 100%;

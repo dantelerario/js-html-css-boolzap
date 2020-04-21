@@ -42,16 +42,16 @@ $(document).ready( function() {
     }
   });
 
-  //SEARCH CONTACT list
+  //SEARCH CONTACT LIST
 
-    var searchList = $('.search-input');
+  var searchList = $('.search-input');
 
-    searchList.on("keyup", function() {
-      var name = $(this).val().toLowerCase().trim();
-      $('.contact-list').filter(function() {
-      $(this).toggle($(this).text().toLowerCase().indexOf(name) > -1)
-      });
+  searchList.on("keyup", function() {
+    var name = $(this).val().toLowerCase().trim();
+    $('.contact-list').filter(function() {
+    $(this).toggle($(this).text().toLowerCase().includes(name));
     });
+  });
 
 
   // CAMBIO ICONA FOOTER INPUT
